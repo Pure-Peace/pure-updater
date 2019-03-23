@@ -1,0 +1,80 @@
+{
+  "pages": [
+    
+		{
+			"path": "pages/index/index",
+			"style": {
+        "navigationBarTitleText": "主页",
+        "app-plus": {
+					"titleNView": {
+						"buttons": [{
+              "type": "share"
+						}]
+					}
+				}
+			}
+    },
+
+    {
+			"path": "pages/user/index",
+			"style": {
+        "navigationBarTitleText": "用户页面"
+			}
+    },
+
+    {
+			"path": "pages/update/index",
+			"style": {
+        "navigationBarTitleText": "软件更新",
+        "navigationBarBackgroundColor": "#007AFF",
+        "navigationBarTextStyle": "white",
+        "enablePullDownRefresh": true,
+        
+        "app-plus": {
+          "titleNView": {
+            "backgroundColor": "#007AFF"
+          },
+          "pullToRefresh": {
+            "support": true,
+            "color": "#007AFF",
+            "style": "circle"
+          }
+        }
+			}
+    }
+    
+  ],
+  
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "pure-updater",
+		"navigationBarBackgroundColor": "#F8F8F8",
+    "backgroundColor": "#F8F8F8",
+    "app-plus": {
+      "bounce": "none",
+      "animationType": "zoom-fade-out",
+      "animationDuration": 400
+    }
+  },
+
+  "tabBar": {
+		"color": "#7A7E83",
+		"selectedColor": "#007AFF",
+		"borderStyle": "black",
+		"backgroundColor": "#F8F8F8",
+		"list": [
+      
+      {
+				"pagePath": "pages/index/index",
+				"text": "主页"
+      },
+      
+			{
+				"pagePath": "pages/user/index",
+				"text": "我的"
+      }
+      
+		]
+	}
+
+}
