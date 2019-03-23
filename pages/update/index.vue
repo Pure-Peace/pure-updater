@@ -83,6 +83,11 @@ export default {
         this.showToast('更新被取消')
       }
   },
+  // 下拉刷新更新
+  onPullDownRefresh() {
+    this.getLatest()
+    uni.stopPullDownRefresh()
+  },
   methods: {
     // 封装个Toast方便用
     showToast(text) {
